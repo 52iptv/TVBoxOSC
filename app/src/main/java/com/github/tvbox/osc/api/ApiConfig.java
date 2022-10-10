@@ -85,7 +85,7 @@ public class ApiConfig {
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
         // Embedded Source : Update in Strings.xml if required
-        String apiUrl = Hawk.get(HawkConfig.API_URL,"https://notabug.org/hongdeng98/Q/raw/master/TV/Q.json");
+        String apiUrl = Hawk.get(HawkConfig.API_URL,"http://tv.51cube.com/TVBox/family0731.json");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
